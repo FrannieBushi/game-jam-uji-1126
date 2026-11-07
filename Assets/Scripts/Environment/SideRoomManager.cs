@@ -42,16 +42,28 @@ public class SideRoomManager : MonoBehaviour
 
     public void TeleportPlayer(DoorOrientation doorOrientation)
     {
-        //cortesia de claude
         var room = activeSideRoom.GetComponent<SideRoom>();
-        Transform spawn = (doorOrientation == DoorOrientation.Left)
-            ? room.rightSpawnPoint
-            : room.leftSpawnPoint;
-        MovePlayer(spawn.position);
+
+        Transform spawn;
+        float offsetX;
+        if (doorOrientation == DoorOrientation.Left)
+        {
+            spawn = room.rightSpawnPoint;
+            offsetX = -0.8f;
+        }
+        else
+        {
+            spawn = room.leftSpawnPoint;
+            offsetX = 0.8f;
+        }
+        MovePlayer(spawn.position + new Vector3(offsetX, -0.2f, 0f));
+        GameObject.FindWithTag("MainCamera").GetComponent<Camarafollow>().FixCamera();
+        GameObject.FindWithTag("MainCamera").GetComponent<Camarafollow>().fixedCamera=true;
     }
 
     public void TeleportPlayerBack()
     {
+        GameObject.FindWithTag("MainCamera").GetComponent<Camarafollow>().fixedCamera=false;
         MovePlayer(returnPosition);
     }
 
