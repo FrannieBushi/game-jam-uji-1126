@@ -3,13 +3,18 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float maxHealth = 100;
 
     private Rigidbody2D rb2D;
     private Vector2 movementInput;
+    private float currentHealth;
+    public float CurrentHealth => currentHealth;
+    public float MaxHealth => maxHealth;
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
     }
 
     void Update()
@@ -23,5 +28,17 @@ public class Player : MonoBehaviour
     {
         rb2D.linearVelocity = movementInput * speed;
     }
+
+    public void RestoreHealth(float curedQuantity)
+    {
+        currentHealth += curedQuantity;
+    }
+
+    public void LoseHealth(float amountLost)
+    {
+        currentHealth -= amountLost;
+    }
+
+    
 
 }
