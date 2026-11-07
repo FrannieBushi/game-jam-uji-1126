@@ -123,23 +123,37 @@ public class FloorGenerator : MonoBehaviour
 
     public GameObject SpawnDoor(DoorType doorType, DoorOrientation doorOrientation, Transform targetTransform)
     {
-        GameObject door = null;
-        Vector3 spawnPosition = new Vector3(targetTransform.position.x, targetTransform.position.y, -0.5f);
+        GameObject prefab = null;
 
-        switch(doorType)
+        switch (doorType)
         {
             case DoorType.Normal:
-                if(doorOrientation==DoorOrientation.Left) door = Instantiate(normalLeftDoor, spawnPosition, targetTransform.rotation); 
-                if(doorOrientation==DoorOrientation.Right) door = Instantiate(normalRightDoor, spawnPosition, targetTransform.rotation); 
-                if(doorOrientation==DoorOrientation.BackLeft) door = Instantiate(backLeftDoor, spawnPosition, targetTransform.rotation); 
-                if(doorOrientation==DoorOrientation.BackRight) door = Instantiate(backRightDoor, spawnPosition, targetTransform.rotation); 
-                return door;
+                switch (doorOrientation)
+                {
+                    case DoorOrientation.Left:      prefab = normalLeftDoor;  break;
+                    case DoorOrientation.Right:     prefab = normalRightDoor; break;
+                    case DoorOrientation.BackLeft:  prefab = backLeftDoor;    break;
+                    case DoorOrientation.BackRight: prefab = backRightDoor;   break;
+                }
+                break;
             case DoorType.Knock:
-                return door;
+                break;
             case DoorType.Locked:
-                return door;
+                break;
         }
 
-        return null;
+        if (prefab == null)
+        {
+            return null;
+        }
+
+        Vector3 spawnPosition = new Vector3(targetTransform.position.x, targetTransform.position.y, -0.5f);
+        GameObject door = Instantiate(prefab, spawnPosition, prefab.transform.rotation);
+
+        Door d = door.GetComponent<Door>();
+        d.doorType = doorType;
+        d.doorOrientation = doorOrientation;
+
+        return door;
     }
 }

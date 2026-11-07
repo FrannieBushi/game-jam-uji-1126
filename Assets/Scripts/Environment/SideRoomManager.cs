@@ -42,10 +42,11 @@ public class SideRoomManager : MonoBehaviour
 
     public void TeleportPlayer(DoorOrientation doorOrientation)
     {
+        //cortesia de claude
         var room = activeSideRoom.GetComponent<SideRoom>();
         Transform spawn = (doorOrientation == DoorOrientation.Left)
-            ? room.leftSpawnPoint
-            : room.rightSpawnPoint;
+            ? room.rightSpawnPoint
+            : room.leftSpawnPoint;
         MovePlayer(spawn.position);
     }
 

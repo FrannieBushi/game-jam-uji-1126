@@ -45,13 +45,13 @@ public class Door : MonoBehaviour
         if (!isBackDoor)
         {
             sideRoom.DeleteSideRoom();
-            if (doorOrientation == DoorOrientation.Right)
+            if (doorOrientation == DoorOrientation.Left)
                 sideRoom.GenerateSideRoom(doorType, DoorOrientation.BackRight);
-            else if (doorOrientation == DoorOrientation.Left)
+            else if (doorOrientation == DoorOrientation.Right)
                 sideRoom.GenerateSideRoom(doorType, DoorOrientation.BackLeft);
 
             sideRoom.TeleportPlayer(doorOrientation);
-        }
+                    }
         else
         {
             sideRoom.TeleportPlayerBack();
