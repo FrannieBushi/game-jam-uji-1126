@@ -33,8 +33,9 @@ public class Player : MonoBehaviour
         rb2D.linearVelocity = movementInput * speed;
 
         //animaciones
-        if(rb2D.linearVelocity.x>0) GetComponent<SpriteRenderer>().flipX=true;
-        else GetComponent<SpriteRenderer>().flipX=false;
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        if (rb2D.linearVelocity.x > 0) sprite.flipX = true;
+        else if (rb2D.linearVelocity.x < 0) sprite.flipX = false;   
 
         animator.SetFloat("xspeed", Math.Abs(rb2D.linearVelocity.x));
         animator.SetFloat("+yspeed", rb2D.linearVelocity.y);

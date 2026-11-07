@@ -6,8 +6,8 @@ public class SideRoom : MonoBehaviour
     public bool isLocked;
     public Transform leftSpawnPoint;
     public Transform rightSpawnPoint;
-    public DoorType doorType;
-    public DoorOrientation doorOrientation;
+    [HideInInspector] public DoorType doorType;
+    [HideInInspector] public DoorOrientation doorOrientation;
     FloorGenerator fg;
 
     void Start()

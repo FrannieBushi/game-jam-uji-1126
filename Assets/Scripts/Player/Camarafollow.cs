@@ -24,4 +24,12 @@ public class Camarafollow : MonoBehaviour
             this.transform.position = Vector3.Lerp(this.transform.position, targetPosition, smooth * Time.deltaTime);
         }
     }
+
+    public void FixCamera()
+    {
+        Vector3 pos = transform.position;
+        pos.x = 0f;
+        pos.y = -10.2f;
+        transform.position = pos;
+    }
 }
