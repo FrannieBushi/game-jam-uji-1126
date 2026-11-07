@@ -13,12 +13,21 @@ public class FloorGenerator : MonoBehaviour
     [SerializeField] bool avoidRepeat = true;
     [SerializeField] int seed = 0;
 
+    [Header ("Prefabs de puertas")] 
+    public GameObject normalLeftDoor;
+    public GameObject normalRightDoor;
+    public GameObject backLeftDoor;
+    public GameObject backRightDoor;
+    public GameObject knockLeftDoor;
+    public GameObject knockRightDoor;
+
     
     GameObject[] activeChunks;
     GameObject[] closedOverlays;
     int head;
     private int count;
     int closedCount;
+    [HideInInspector] public Transform oldPlayerPosition;
  
     float nextSpawnY;
     int lastIndex = -1;
@@ -110,5 +119,41 @@ public class FloorGenerator : MonoBehaviour
         do { i = rng.Next(chunkPrefabs.Length); }
         while (avoidRepeat && i == lastIndex);
         return i;
+    }
+
+    public GameObject SpawnDoor(DoorType doorType, DoorOrientation doorOrientation, Transform targetTransform)
+    {
+        GameObject prefab = null;
+
+        switch (doorType)
+        {
+            case DoorType.Normal:
+                switch (doorOrientation)
+                {
+                    case DoorOrientation.Left:      prefab = normalLeftDoor;  break;
+                    case DoorOrientation.Right:     prefab = normalRightDoor; break;
+                    case DoorOrientation.BackLeft:  prefab = backLeftDoor;    break;
+                    case DoorOrientation.BackRight: prefab = backRightDoor;   break;
+                }
+                break;
+            case DoorType.Knock:
+                break;
+            case DoorType.Locked:
+                break;
+        }
+
+        if (prefab == null)
+        {
+            return null;
+        }
+
+        Vector3 spawnPosition = new Vector3(targetTransform.position.x, targetTransform.position.y, -0.5f);
+        GameObject door = Instantiate(prefab, spawnPosition, prefab.transform.rotation);
+
+        Door d = door.GetComponent<Door>();
+        d.doorType = doorType;
+        d.doorOrientation = doorOrientation;
+
+        return door;
     }
 }
