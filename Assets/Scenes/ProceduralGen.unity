@@ -280,6 +280,8 @@ MonoBehaviour:
   - {fileID: 7803322951707954557, guid: 8a3caf627961a2e4d8d359ea36629ca8, type: 3}
   - {fileID: 7803322951707954557, guid: 414dadf60b556af43b7c25cd6c330f17, type: 3}
   - {fileID: 7803322951707954557, guid: 777bf519d0f9db74cb4abf46cfefdf76, type: 3}
+  - {fileID: 7803322951707954557, guid: 38d29403e18958f4ca010dc4d3c4dbd0, type: 3}
+  - {fileID: 7803322951707954557, guid: 92c348d6010332d44b1c304516ac4377, type: 3}
   knockRooms: []
   activeSideRoom: {fileID: 0}
 --- !u!1 &362023035
