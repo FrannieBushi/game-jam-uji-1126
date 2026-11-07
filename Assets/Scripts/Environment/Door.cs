@@ -27,10 +27,25 @@ public class Door : MonoBehaviour
         sideRoom = GameObject.FindWithTag("GameController").GetComponent<SideRoomManager>();
         if(sideRoom==null) Debug.Log("FALTA UN GAMEOBJECT VACIO CON TAG SIDEROOM!!!!!");
     }
-    public void OpenDoor()
+    public virtual void OpenDoor()
     {
-        StartCoroutine(OpenDoorRoutine());
+        PlayerDoorInteractor pdi = GameObject.FindWithTag("Player").GetComponent<PlayerDoorInteractor>();
+        if(doorType==DoorType.Locked)
+        {
+            if(pdi.hasKey)
+            {
+                pdi.hasKey=false;
+                StartCoroutine(OpenDoorRoutine());
+            }
+            else
+            {
+                Debug.Log("puerta bloqueada + no llave");
+            }
+        }
+        else
+            StartCoroutine(OpenDoorRoutine());
     }
+        
 
     IEnumerator OpenDoorRoutine()
     {
@@ -42,6 +57,8 @@ public class Door : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
+        //llamar jumpscare aquí
+        
         if (!isBackDoor)
         {
             sideRoom.DeleteSideRoom();

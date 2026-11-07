@@ -5,6 +5,7 @@ public class PlayerDoorInteractor : MonoBehaviour
     [SerializeField] private KeyCode interactKey = KeyCode.E;
     [SerializeField] private float interactRadius = 1.2f;
     [SerializeField] private LayerMask doorLayer;
+    public bool hasKey = false;
 
     private void Update()
     {

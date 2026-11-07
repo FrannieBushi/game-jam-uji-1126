@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class SideRoom : MonoBehaviour
 {
+    public bool isLocked;
     public Transform leftSpawnPoint;
     public Transform rightSpawnPoint;
     public DoorType doorType;
@@ -17,6 +18,9 @@ public class SideRoom : MonoBehaviour
             door = fg.SpawnDoor(doorType, doorOrientation, leftSpawnPoint);
         if(doorOrientation==DoorOrientation.Right || doorOrientation==DoorOrientation.BackRight )
             door = fg.SpawnDoor(doorType, doorOrientation, rightSpawnPoint);
+
+        if(isLocked)
+            door.GetComponent<Door>().doorType = DoorType.Locked;
         door.transform.SetParent(gameObject.transform);
     }
 
