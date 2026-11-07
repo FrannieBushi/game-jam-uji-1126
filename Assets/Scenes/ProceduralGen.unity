@@ -535,7 +535,7 @@ PrefabInstance:
     - target: {fileID: 7784880001461257027, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1212969168722979780, guid: 54906c1c671825b41b17de039995be2d, type: 3}
+      objectReference: {fileID: -9208355906083584053, guid: eab37792f4d5e7e4597ff04cf15c5f27, type: 3}
     - target: {fileID: 7784880001461257027, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -623,7 +623,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

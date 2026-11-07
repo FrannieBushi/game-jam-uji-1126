@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 54906c1c671825b41b17de039995be2d
+guid: a5ccfec633375664eb09f38097f73aaa
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639296659555241696
+  platformSettingsDirtyTick: 639296674951341431
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -125,7 +125,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Frame_0
     originalName: 
-    pivot: {x: 0.4666667, y: -0.125}
+    pivot: {x: 0.5, y: -0.13333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 15
-      height: 16
-    spriteID: 96920481aae26cc4f8323897b73d2176
+      width: 16
+      height: 15
+    spriteID: 1b1fb88264667a14184a2cd7eff452a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -146,59 +146,17 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Frame_1
     originalName: 
-    pivot: {x: 0.4666667, y: -0.13333334}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 27
-      y: 28
-      width: 15
-      height: 15
-    spriteID: 128903ad445159243b1ca24cf63e0e75
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 27, y: 28}
-  - name: Frame_2
-    originalName: 
-    pivot: {x: 0.4666667, y: -0.125}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 27
-      y: 4
-      width: 15
-      height: 16
-    spriteID: b21324e4b3672b84cbae16b175afc03d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 27, y: 4}
-  - name: Frame_3
-    originalName: 
-    pivot: {x: 0.4666667, y: -0.125}
+    pivot: {x: 0.4375, y: -0.13333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 28
-      width: 15
-      height: 16
-    spriteID: ae8b4ae848c49744c8e561cb9a5276a9
+      y: 27
+      width: 16
+      height: 15
+    spriteID: 0bbf1c5cc6edf3849b7da685c5fa9d72
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -206,17 +164,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 28}
+    uvTransform: {x: 4, y: 27}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3778452520
+      value0: 2759872865
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: "Ni\xF1a_caminando_ANIM"
+    name: "Ni\xF1a_caminandoDETRAS"
     layerFlags: 0
     layerType: 0
     blendMode: 0
@@ -225,38 +183,20 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 9
+        x: 8
         y: 2
-        width: 15
-        height: 16
-      spriteId: 96920481aae26cc4f8323897b73d2176
+        width: 16
+        height: 15
+      spriteId: 1b1fb88264667a14184a2cd7eff452a4
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 9
         y: 2
-        width: 15
+        width: 16
         height: 15
-      spriteId: 128903ad445159243b1ca24cf63e0e75
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 2
-        width: 15
-        height: 16
-      spriteId: b21324e4b3672b84cbae16b175afc03d
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 2
-        width: 15
-        height: 16
-      spriteId: ae8b4ae848c49744c8e561cb9a5276a9
+      spriteId: 0bbf1c5cc6edf3849b7da685c5fa9d72
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -300,4 +240,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 64, y: 64}
+  previousTextureSize: {x: 32, y: 64}
