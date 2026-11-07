@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: a5c32463e0fb14f4ca65be931ac2cf3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6705063855113943560
+    second: rorschach-removebg-preview_0
+  - first:
+      213: 3287261651977195844
+    second: rorschach-removebg-preview_1
+  - first:
+      213: 2468869050328810915
+    second: rorschach-removebg-preview_2
+  - first:
+      213: 5536151550751896762
+    second: rorschach-removebg-preview_3
+  - first:
+      213: -2082171259131414094
+    second: rorschach-removebg-preview_4
+  - first:
+      213: 6958518209109178654
+    second: rorschach-removebg-preview_5
+  - first:
+      213: -612903921409517785
+    second: rorschach-removebg-preview_6
+  - first:
+      213: -6183489719096200723
+    second: rorschach-removebg-preview_7
+  - first:
+      213: -8372981734358926807
+    second: rorschach-removebg-preview_8
+  - first:
+      213: -7041171587326336100
+    second: rorschach-removebg-preview_9
+  - first:
+      213: -1719695368251770598
+    second: rorschach-removebg-preview_10
+  - first:
+      213: 4401530534612610572
+    second: rorschach-removebg-preview_11
+  - first:
+      213: -6613846265359654969
+    second: rorschach-removebg-preview_12
+  - first:
+      213: -4986648117519152969
+    second: rorschach-removebg-preview_13
+  - first:
+      213: -8049543834999662191
+    second: rorschach-removebg-preview_14
+  - first:
+      213: -6714015450217636340
+    second: rorschach-removebg-preview_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 291
+        width: 90
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f54f9fd2f3d2f2a0800000000000000
+      internalID: -6705063855113943560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 286
+        width: 108
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4415dd94e03be9d20800000000000000
+      internalID: 3287261651977195844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 288
+        width: 104
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a50ec5125f234220800000000000000
+      internalID: 2468869050328810915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 291
+        width: 104
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab47b4de08c54dc40800000000000000
+      internalID: 5536151550751896762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 290
+        width: 108
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9b1f98544aa13e0800000000000000
+      internalID: -2082171259131414094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 306
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e193a01817f919060800000000000000
+      internalID: 6958518209109178654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 171
+        width: 90
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72711fa71278e77f0800000000000000
+      internalID: -612903921409517785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 166
+        width: 75
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1bdfcacd4df2aa0800000000000000
+      internalID: -6183489719096200723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 166
+        width: 89
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ab3bc79713dcb80800000000000000
+      internalID: -8372981734358926807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 171
+        width: 97
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9327de3fbbb84e90800000000000000
+      internalID: -7041171587326336100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 166
+        width: 89
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19f7758c2a6228e0800000000000000
+      internalID: -1719695368251770598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 50
+        width: 98
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0eae9f63b0651d30800000000000000
+      internalID: 4401530534612610572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 46
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf91320dd5e634a0800000000000000
+      internalID: -6613846265359654969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 46
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8866f15fddbcab0800000000000000
+      internalID: -4986648117519152969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 46
+        width: 94
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199d8e6c7864a4090800000000000000
+      internalID: -8049543834999662191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rorschach-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 46
+        width: 109
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e1b49358603d2a0800000000000000
+      internalID: -6714015450217636340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rorschach-removebg-preview_0: -6705063855113943560
+      rorschach-removebg-preview_1: 3287261651977195844
+      rorschach-removebg-preview_10: -1719695368251770598
+      rorschach-removebg-preview_11: 4401530534612610572
+      rorschach-removebg-preview_12: -6613846265359654969
+      rorschach-removebg-preview_13: -4986648117519152969
+      rorschach-removebg-preview_14: -8049543834999662191
+      rorschach-removebg-preview_15: -6714015450217636340
+      rorschach-removebg-preview_2: 2468869050328810915
+      rorschach-removebg-preview_3: 5536151550751896762
+      rorschach-removebg-preview_4: -2082171259131414094
+      rorschach-removebg-preview_5: 6958518209109178654
+      rorschach-removebg-preview_6: -612903921409517785
+      rorschach-removebg-preview_7: -6183489719096200723
+      rorschach-removebg-preview_8: -8372981734358926807
+      rorschach-removebg-preview_9: -7041171587326336100
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
