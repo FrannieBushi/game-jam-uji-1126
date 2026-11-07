@@ -9,7 +9,7 @@ public enum DoorType
 
 public enum DoorOrientation
 {
-    Left, Right, Back
+    Left, Right, BackLeft, BackRight
 }
 
 public class Door : MonoBehaviour
@@ -35,21 +35,29 @@ public class Door : MonoBehaviour
     IEnumerator OpenDoorRoutine()
     {
         animator.Play("OpenDoor");
-        if(blackOverlay!=null) blackOverlay.FadeIn(1f);
+
+        if (blackOverlay != null) blackOverlay.FadeIn(1f);
+        bool isBackDoor = doorOrientation == DoorOrientation.BackLeft || doorOrientation == DoorOrientation.BackRight;
+        if (!isBackDoor) sideRoom.StoreReturnPosition();
+
         yield return new WaitForSeconds(1f);
 
-        if(doorOrientation!=DoorOrientation.Back)
+        if (!isBackDoor)
         {
             sideRoom.DeleteSideRoom();
-            sideRoom.GenerateSideRoom(doorType);
+            if (doorOrientation == DoorOrientation.Right)
+                sideRoom.GenerateSideRoom(doorType, DoorOrientation.BackRight);
+            else if (doorOrientation == DoorOrientation.Left)
+                sideRoom.GenerateSideRoom(doorType, DoorOrientation.BackLeft);
+
             sideRoom.TeleportPlayer(doorOrientation);
         }
         else
         {
-            
+            sideRoom.TeleportPlayerBack();
         }
 
         yield return new WaitForSeconds(0.5f);
-        if(blackOverlay!=null) blackOverlay.FadeOut(1f);
+        if (blackOverlay != null) blackOverlay.FadeOut(1f);
     }
 }

@@ -21,7 +21,6 @@ public class Camarafollow : MonoBehaviour
             //targetPosition.x = target.position.x;
             targetPosition.y = target.position.y;
             targetPosition.z = this.transform.position.z;
-            Debug.Log("ayuda");
             this.transform.position = Vector3.Lerp(this.transform.position, targetPosition, smooth * Time.deltaTime);
         }
     }

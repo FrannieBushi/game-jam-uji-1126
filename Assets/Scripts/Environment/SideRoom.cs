@@ -1,16 +1,41 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SideRoom : MonoBehaviour
 {
     public Transform leftSpawnPoint;
     public Transform rightSpawnPoint;
+    public DoorType doorType;
+    public DoorOrientation doorOrientation;
+    FloorGenerator fg;
 
-    void SpawnDoor(DoorOrientation doorOrientation)
+    void Start()
     {
-        //aqui realmente el doorOrientation está invertido
-        if(doorOrientation==DoorOrientation.Left)
+        GameObject door = null;
+        fg = GameObject.FindWithTag("GameController").GetComponent<FloorGenerator>();
+        if(doorOrientation==DoorOrientation.Left || doorOrientation==DoorOrientation.BackLeft )
+            door = fg.SpawnDoor(doorType, doorOrientation, leftSpawnPoint);
+        if(doorOrientation==DoorOrientation.Right || doorOrientation==DoorOrientation.BackRight )
+            door = fg.SpawnDoor(doorType, doorOrientation, rightSpawnPoint);
+        door.transform.SetParent(gameObject.transform);
+    }
+
+    public void StoreOldPosition()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        
+        if (player != null && fg.oldPlayerPosition != null)
         {
-            
+            fg.oldPlayerPosition.position = new Vector3(
+                player.transform.position.x, 
+                player.transform.position.y, 
+                fg.oldPlayerPosition.position.z
+            );
         }
+    }
+
+    public Transform GetOldPosition()
+    {
+        return fg.oldPlayerPosition;
     }
 }

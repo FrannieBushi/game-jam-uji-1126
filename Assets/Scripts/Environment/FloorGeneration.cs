@@ -13,12 +13,21 @@ public class FloorGenerator : MonoBehaviour
     [SerializeField] bool avoidRepeat = true;
     [SerializeField] int seed = 0;
 
+    [Header ("Prefabs de puertas")] 
+    public GameObject normalLeftDoor;
+    public GameObject normalRightDoor;
+    public GameObject backLeftDoor;
+    public GameObject backRightDoor;
+    public GameObject knockLeftDoor;
+    public GameObject knockRightDoor;
+
     
     GameObject[] activeChunks;
     GameObject[] closedOverlays;
     int head;
     private int count;
     int closedCount;
+    [HideInInspector] public Transform oldPlayerPosition;
  
     float nextSpawnY;
     int lastIndex = -1;
@@ -112,8 +121,25 @@ public class FloorGenerator : MonoBehaviour
         return i;
     }
 
-    public void SpawnDoor(DoorType doorType, DoorOrientation doorOrientation, Transform transform)
+    public GameObject SpawnDoor(DoorType doorType, DoorOrientation doorOrientation, Transform targetTransform)
     {
-        
+        GameObject door = null;
+        Vector3 spawnPosition = new Vector3(targetTransform.position.x, targetTransform.position.y, -0.5f);
+
+        switch(doorType)
+        {
+            case DoorType.Normal:
+                if(doorOrientation==DoorOrientation.Left) door = Instantiate(normalLeftDoor, spawnPosition, targetTransform.rotation); 
+                if(doorOrientation==DoorOrientation.Right) door = Instantiate(normalRightDoor, spawnPosition, targetTransform.rotation); 
+                if(doorOrientation==DoorOrientation.BackLeft) door = Instantiate(backLeftDoor, spawnPosition, targetTransform.rotation); 
+                if(doorOrientation==DoorOrientation.BackRight) door = Instantiate(backRightDoor, spawnPosition, targetTransform.rotation); 
+                return door;
+            case DoorType.Knock:
+                return door;
+            case DoorType.Locked:
+                return door;
+        }
+
+        return null;
     }
 }
