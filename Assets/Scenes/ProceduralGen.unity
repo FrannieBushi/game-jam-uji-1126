@@ -208,9 +208,10 @@ GameObject:
   m_Component:
   - component: {fileID: 54537576}
   - component: {fileID: 54537575}
+  - component: {fileID: 54537577}
   m_Layer: 0
   m_Name: FloorGenerator
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,6 +254,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &54537577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54537574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9315738539b9bfc42abc0d986e0e8582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalRooms:
+  - {fileID: 4006322484584632532, guid: 349b1b754561f4a4a919b8ffa048d37a, type: 3}
+  knockRooms: []
 --- !u!1 &362023035
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,14 +406,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2285263415864762047, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2285263415864762047, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2285263415864762047, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -441,31 +449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Personaje
       objectReference: {fileID: 0}
-    - target: {fileID: 7784880001461257027, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784880001461257027, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9739469
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784880001461257027, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5834019046969091825, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1540435418}
-    - targetCorrespondingSourceObject: {fileID: 5834019046969091825, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1540435417}
-    - targetCorrespondingSourceObject: {fileID: 5834019046969091825, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1540435416}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
 --- !u!1 &1528682448
 GameObject:
@@ -479,6 +466,7 @@ GameObject:
   - component: {fileID: 1528682450}
   - component: {fileID: 1528682449}
   - component: {fileID: 1528682452}
+  - component: {fileID: 1528682453}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -604,6 +592,21 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1528682453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528682448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595cb051e4cf6e7439f0c9644e7bf37c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smooth: 10
+  target: {fileID: 1540435415}
+  fixedCamera: 0
 --- !u!1 &1534930506
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660dc4ffd94a6bf4684b94c571ed4ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
+  doorOrientation: 0
 --- !u!212 &1534930508
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -774,78 +779,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1540435411 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5834019046969091825, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
-  m_PrefabInstance: {fileID: 1103534969}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1540435415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2285263415864762047, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
   m_PrefabInstance: {fileID: 1103534969}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1540435416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540435411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c6f0bf69ecce25428945c3af2e69b45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackKey: 106
-  useMouse: 1
-  mouseButton: 0
-  damage: 1
-  cooldown: 0.4
-  activeTime: 0.15
-  targetLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  hitboxSize: {x: 1.5, y: 1.2}
-  reach: 1
-  knockbackForce: 8
-  attackVisual: {fileID: 0}
-  onAttack:
-    m_PersistentCalls:
-      m_Calls: []
-  onHit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1540435417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540435411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94089ccaf2d820b4685252d03ccfa39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactKey: 101
-  interactRadius: 1.5
-  doorLayer:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &1540435418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540435411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 595cb051e4cf6e7439f0c9644e7bf37c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smooth: 0
-  target: {fileID: 0}
 --- !u!1001 &1733270970
 PrefabInstance:
   m_ObjectHideFlags: 0

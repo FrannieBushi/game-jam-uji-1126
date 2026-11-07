@@ -111,4 +111,9 @@ public class FloorGenerator : MonoBehaviour
         while (avoidRepeat && i == lastIndex);
         return i;
     }
+
+    public void SpawnDoor(DoorType doorType, DoorOrientation doorOrientation, Transform transform)
+    {
+        
+    }
 }

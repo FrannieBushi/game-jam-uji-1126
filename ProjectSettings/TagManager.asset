@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BlackOverlay
   - Door
+  - SideRoom
   layers:
   - Default
   - TransparentFX
