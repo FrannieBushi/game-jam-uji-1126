@@ -51,6 +51,4 @@ public class Player : MonoBehaviour
         currentHealth -= amountLost;
     }
 
-    
-
 }

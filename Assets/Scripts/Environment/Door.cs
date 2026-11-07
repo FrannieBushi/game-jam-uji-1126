@@ -76,5 +76,6 @@ public class Door : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         if (blackOverlay != null) blackOverlay.FadeOut(1f);
+        if (JumpscareManager.Instance != null) JumpscareManager.Instance.TryJumpscare();
     }
 }
