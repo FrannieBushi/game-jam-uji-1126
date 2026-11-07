@@ -133,8 +133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f64e1d2a4b27f040a3d23ef3c60bccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
   leftSpawnPoint: {fileID: 4676054092002888743}
   rightSpawnPoint: {fileID: 305252160842492151}
+  doorType: 0
+  doorOrientation: 0
 --- !u!1 &5829715131448204601
 GameObject:
   m_ObjectHideFlags: 0

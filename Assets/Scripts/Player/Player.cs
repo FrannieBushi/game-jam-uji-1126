@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -11,8 +12,11 @@ public class Player : MonoBehaviour
     public float CurrentHealth => currentHealth;
     public float MaxHealth => maxHealth;
 
+    Animator animator;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
     }
@@ -27,6 +31,14 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         rb2D.linearVelocity = movementInput * speed;
+
+        //animaciones
+        if(rb2D.linearVelocity.x>0) GetComponent<SpriteRenderer>().flipX=true;
+        else GetComponent<SpriteRenderer>().flipX=false;
+
+        animator.SetFloat("xspeed", Math.Abs(rb2D.linearVelocity.x));
+        animator.SetFloat("+yspeed", rb2D.linearVelocity.y);
+        animator.SetFloat("-yspeed", rb2D.linearVelocity.y);
     }
 
     public void RestoreHealth(float curedQuantity)
