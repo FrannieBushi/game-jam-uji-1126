@@ -275,6 +275,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalRooms:
   - {fileID: 7803322951707954557, guid: 2ca15e9b5430efc4a80186497f068b64, type: 3}
+  - {fileID: 7803322951707954557, guid: 20ad101a200c0a1419f540af3c918ab6, type: 3}
+  - {fileID: 7803322951707954557, guid: 8cd12d03773d7fa4d85dd09b2e8ede33, type: 3}
+  - {fileID: 7803322951707954557, guid: 8a3caf627961a2e4d8d359ea36629ca8, type: 3}
+  - {fileID: 7803322951707954557, guid: 414dadf60b556af43b7c25cd6c330f17, type: 3}
+  - {fileID: 7803322951707954557, guid: 777bf519d0f9db74cb4abf46cfefdf76, type: 3}
   knockRooms: []
   activeSideRoom: {fileID: 0}
 --- !u!1 &362023035
