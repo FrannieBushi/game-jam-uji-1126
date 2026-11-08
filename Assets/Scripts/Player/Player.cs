@@ -24,6 +24,11 @@ public class Player : MonoBehaviour
 
     Animator animator;
 
+    public event Action<bool> OnKeyChanged;
+
+    bool hasKey;
+    public bool HasKey => hasKey;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -82,5 +87,20 @@ public class Player : MonoBehaviour
     public void RestoreHealth(float curedQuantity)
     {
         currentHealth = Mathf.Min(maxHealth, currentHealth + curedQuantity);
+    }
+
+    public void GiveKey()
+    {
+        if (hasKey) return;
+        hasKey = true;
+        OnKeyChanged?.Invoke(true);
+    }
+
+    public bool TryUseKey()
+    {
+        if (!hasKey) return false;
+        hasKey = false;
+        OnKeyChanged?.Invoke(false);
+        return true;
     }
 }
