@@ -1848,6 +1848,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5926141729836078673}
     m_Modifications:
+    - target: {fileID: -7188817592051637195, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7188817592051637195, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -7188817592051637195, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7188817592051637195, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
+      propertyPath: m_ShadowMesh.m_InitialTrim
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7188817592051637195, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7188817592051637195, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 5444741123816381122}
     - target: {fileID: 8404077359488373707, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.13
@@ -1897,6 +1921,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
+--- !u!212 &5444741123816381122 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5106948350724426360, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
+  m_PrefabInstance: {fileID: 959298898394550458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8786903952916349809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8404077359488373707, guid: 2cd2de41652ab0e47a1b3900a3adadd4, type: 3}
@@ -1910,6 +1939,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5926141729836078673}
     m_Modifications:
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 7102078983349858640}
     - target: {fileID: 475833497828045976, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
       propertyPath: m_Name
       value: EstanteriaMorada_0
@@ -1964,6 +2013,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4832326514275564386, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
   m_PrefabInstance: {fileID: 1900320884751308628}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &7102078983349858640 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8705718605033924100, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+  m_PrefabInstance: {fileID: 1900320884751308628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3983261017556117745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1972,6 +2026,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5926141729836078673}
     m_Modifications:
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 5735209025014435573}
     - target: {fileID: 475833497828045976, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
       propertyPath: m_Name
       value: EstanteriaMorada_0 (1)
@@ -2021,6 +2095,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+--- !u!212 &5735209025014435573 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8705718605033924100, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+  m_PrefabInstance: {fileID: 3983261017556117745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8379155559287313299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4832326514275564386, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
@@ -2203,7 +2282,8 @@ PrefabInstance:
       value: Lampara_morado
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7172683054825488285, guid: d6ae93b11942cd7468a7902cb32c88cf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6ae93b11942cd7468a7902cb32c88cf, type: 3}

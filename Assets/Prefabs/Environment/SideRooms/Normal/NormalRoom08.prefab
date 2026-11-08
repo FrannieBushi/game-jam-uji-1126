@@ -1869,6 +1869,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5926141729836078673}
     m_Modifications:
+    - target: {fileID: -3972746871711292899, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3972746871711292899, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -3972746871711292899, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3972746871711292899, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3972746871711292899, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 5998749913160729668}
     - target: {fileID: 4730248757261171703, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
       propertyPath: m_Name
       value: SillonMorado_0
@@ -1918,6 +1938,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
+--- !u!212 &5998749913160729668 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5391793670599483944, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
+  m_PrefabInstance: {fileID: 1868053237321557612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8725698291377811863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6988250543837632507, guid: c3815989bb8a27b4f964a23f29c16e87, type: 3}
@@ -2055,6 +2080,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5926141729836078673}
     m_Modifications:
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 6085385148171278992}
     - target: {fileID: 475833497828045976, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
       propertyPath: m_Name
       value: EstanteriaMorada_0
@@ -2104,6 +2149,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+--- !u!212 &6085385148171278992 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8705718605033924100, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+  m_PrefabInstance: {fileID: 3216499765279833236}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8046967308993234934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4832326514275564386, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
@@ -2117,6 +2167,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5926141729836078673}
     m_Modifications:
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_ShadowMesh.m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6029742154951389883, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 4405005567147086176}
     - target: {fileID: 475833497828045976, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
       propertyPath: m_Name
       value: EstanteriaMorada_0 (1)
@@ -2173,6 +2247,11 @@ PrefabInstance:
 --- !u!4 &503992591922842630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4832326514275564386, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
+  m_PrefabInstance: {fileID: 5039903789325612900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4405005567147086176 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8705718605033924100, guid: 0d122880c83d21a4cb6b2a9aea4b5594, type: 3}
   m_PrefabInstance: {fileID: 5039903789325612900}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6582013894078745191
@@ -2245,6 +2324,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5926141729836078673}
     m_Modifications:
+    - target: {fileID: -7095913905483310119, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7095913905483310119, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: -7095913905483310119, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7095913905483310119, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7095913905483310119, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 4333770981579099943}
     - target: {fileID: 2508993222943289688, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4
@@ -2294,6 +2393,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
+--- !u!212 &4333770981579099943 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6706863290482841860, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
+  m_PrefabInstance: {fileID: 7005126155959096867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4892748767429191547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2508993222943289688, guid: 2b3f8157f2cb121468da9bcf2d44acfe, type: 3}
@@ -2311,6 +2415,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Muebles_atras_3
       objectReference: {fileID: 0}
+    - target: {fileID: 4003963658746432434, guid: 56952b3685587ea449f5971163e08339, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003963658746432434, guid: 56952b3685587ea449f5971163e08339, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003963658746432434, guid: 56952b3685587ea449f5971163e08339, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003963658746432434, guid: 56952b3685587ea449f5971163e08339, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003963658746432434, guid: 56952b3685587ea449f5971163e08339, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 7829940748881246421}
     - target: {fileID: 4336425097358450908, guid: 56952b3685587ea449f5971163e08339, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.17
@@ -2359,6 +2483,11 @@ PrefabInstance:
 --- !u!4 &5507300334754296986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4336425097358450908, guid: 56952b3685587ea449f5971163e08339, type: 3}
+  m_PrefabInstance: {fileID: 8089537913165501510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7829940748881246421 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2083555290936306835, guid: 56952b3685587ea449f5971163e08339, type: 3}
   m_PrefabInstance: {fileID: 8089537913165501510}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8794613910826510559
@@ -2476,7 +2605,8 @@ PrefabInstance:
       value: Lampara_morado
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7172683054825488285, guid: d6ae93b11942cd7468a7902cb32c88cf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6ae93b11942cd7468a7902cb32c88cf, type: 3}

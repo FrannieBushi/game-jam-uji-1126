@@ -2082,7 +2082,8 @@ PrefabInstance:
       value: Lampara_morado
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7172683054825488285, guid: d6ae93b11942cd7468a7902cb32c88cf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6ae93b11942cd7468a7902cb32c88cf, type: 3}
