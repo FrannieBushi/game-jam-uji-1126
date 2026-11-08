@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     private float currentHealth;
     public float CurrentHealth => currentHealth;
     public float MaxHealth => maxHealth;
+    public event Action<float> OnDamaged;          
+    public bool IsMoving => movementInput.sqrMagnitude > 0.01f;
 
     Animator animator;
 
@@ -42,14 +44,14 @@ public class Player : MonoBehaviour
         animator.SetFloat("-yspeed", rb2D.linearVelocity.y);
     }
 
-    public void RestoreHealth(float curedQuantity)
-    {
-        currentHealth += curedQuantity;
-    }
-
     public void LoseHealth(float amountLost)
     {
-        currentHealth -= amountLost;
+        currentHealth = Mathf.Max(0f, currentHealth - amountLost);
+        OnDamaged?.Invoke(amountLost);
     }
 
+    public void RestoreHealth(float curedQuantity)
+    {
+        currentHealth = Mathf.Min(maxHealth, currentHealth + curedQuantity);
+    }
 }
