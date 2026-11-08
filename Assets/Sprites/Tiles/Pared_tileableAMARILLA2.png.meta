@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8b247773001f6664fa84403272d89b64
+guid: 6ca6917d3d693ec4d8271ce4ad418785
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4785686412763456533
-    second: Esquina_tileable_0
+      213: 2909637208007667438
+    second: Pared_tileableAMARILLA2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,7 +100,29 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Esquina_tileable_0
+      name: Pared_tileableAMARILLA2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee6e80ff9b116820800000000000000
+      internalID: 2909637208007667438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared_tileableAMARILLA2_1
       rect:
         serializedVersion: 2
         x: 0
@@ -113,10 +135,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: beb12d03093d59db0800000000000000
-      internalID: -4785686412763456533
+      spriteID: b17c38dc9731fbe42bc503239edb136c
+      internalID: -87787323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared_tileableAMARILLA2_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a21e1948674aac4d89a4438a7623afe
+      internalID: 1261634018
       vertices: []
       indices: 
       edges: []
@@ -125,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 27d9a2f606aeb7a40804694e60029ec2
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +179,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Esquina_tileable_0: -4785686412763456533
+      Pared_tileableAMARILLA2_0: 2909637208007667438
+      Pared_tileableAMARILLA2_1: -87787323
+      Pared_tileableAMARILLA2_2: 1261634018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-/// <summary>
-/// Bicho pared: ancho 1 hasta que te acercas; entonces se expande (5 tiles) y bloquea el paso.
-/// Ver cómo se expande quita un poco de cordura; atravesarlo cuesta mucha.
-/// Requiere un Collider2D con IsTrigger activado (así el jugador puede cruzarlo pagando vida).
-/// </summary>
-/// 
-[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class WallBug : Enemy
 {
     [Header("Expansión")]
@@ -19,21 +13,26 @@ public class WallBug : Enemy
     [SerializeField] private bool expandAlongY = true;
 
     [Header("Daño")]
-    [Tooltip("Fracción del daño base que quita ver la expansión (una vez).")]
     [SerializeField, Range(0f, 1f)] private float seenExpansionDamageFraction = 0.2f;
-    [Tooltip("Multiplicador del daño base al atravesar el bicho ya expandido.")]
     [SerializeField] private float crossingDamageMultiplier = 3f;
 
     private enum State { Idle, Expanding, Blocking }
     private State state = State.Idle;
+    Animator animator;
 
-    private Collider2D col;
+    private BoxCollider2D col;
+    private Vector2 baseSize;
+    private Vector2 baseOffset;
 
     protected override void Awake()
     {
         base.Awake();
-        col = GetComponent<Collider2D>();
+        col = GetComponent<BoxCollider2D>();
         col.isTrigger = true;
+        animator = GetComponent<Animator>();
+
+        baseSize = col.size;
+        baseOffset = col.offset;
         SetWidth(normalWidth);
     }
 
@@ -46,8 +45,8 @@ public class WallBug : Enemy
     private IEnumerator ExpandRoutine()
     {
         state = State.Expanding;
+        animator.Play("expand");
 
-        // El jugador está lo bastante cerca para verlo: pierde un poco de cordura.
         if (player != null)
         {
             Collider2D playerCol = player.GetComponentInChildren<Collider2D>();
@@ -66,14 +65,22 @@ public class WallBug : Enemy
         state = State.Blocking;
     }
 
+    // Ahora solo cambia el collider, el sprite no se toca.
     private void SetWidth(float width)
     {
-        Vector3 s = transform.localScale;
-        if (expandAlongY) s.y = width; else s.x = width;
-        transform.localScale = s;
+        // El tamaño del collider está en espacio local, así que dividimos
+        // por la escala del transform para que "width" sea en unidades de mundo.
+        Vector3 scale = transform.localScale;
+
+        Vector2 size = baseSize;
+        if (expandAlongY) size.y = width / Mathf.Abs(scale.y);
+        else              size.x = width / Mathf.Abs(scale.x);
+        col.size = size;
+
+        // Opcional: mantener el collider centrado en el mismo punto.
+        col.offset = baseOffset;
     }
 
-    // Mientras el jugador esté dentro del bicho ya expandido, pierde mucha cordura (con cooldown).
     private void OnTriggerStay2D(Collider2D other)
     {
         if (state != State.Blocking) return;

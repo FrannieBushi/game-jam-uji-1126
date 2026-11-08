@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 478857020121622959}
   - component: {fileID: 7102843077497606320}
   - component: {fileID: -292772693278140314}
+  - component: {fileID: 2703695252278156535}
   m_Layer: 0
   m_Name: SillonAmarillo_0
   m_TagString: Untagged
@@ -103,7 +104,7 @@ MonoBehaviour:
   m_ShadowGroup: 0
   m_Priority: 0
   m_ComponentVersion: 5
-  m_HasRenderer: 0
+  m_HasRenderer: 1
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
@@ -131,13 +132,34 @@ MonoBehaviour:
     m_FlipY: 0
     m_InitialTrim: 0.05
   m_CastingOption: 1
-  m_PreviousTrimEdge: 0
-  m_PreviousEdgeProcessing: -1
-  m_PreviousShadowCastingSource: -1
-  m_PreviousShadowShape2DSource: {fileID: 0}
+  m_PreviousTrimEdge: 0.05
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 7102843077497606320}
   references:
     version: 2
     RefIds:
     - rid: 7837391632989946093
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
+--- !u!65 &2703695252278156535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3556914486030558642}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9581282, y: 0.6418972, z: 0.2}
+  m_Center: {x: -0.0040625334, y: -0.22342873, z: 0}
