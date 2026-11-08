@@ -554,6 +554,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2196738211570048555, guid: 8426b1b2b8969b54abdf673c623abf9b, type: 3}
+      propertyPath: baseChance
+      value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196738211570048555, guid: 8426b1b2b8969b54abdf673c623abf9b, type: 3}
       propertyPath: jumpscareImage
       value: 
       objectReference: {fileID: 1065116399}
