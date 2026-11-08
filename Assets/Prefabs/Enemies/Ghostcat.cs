@@ -19,6 +19,7 @@ public class GhostCat : ChaserEnemy
     [SerializeField, Range(0f, 2f)] private float aggroDamageMultiplier = 1f;
 
     private bool emerging;
+    private Animator animator;
 
     protected override void Awake()
     {
@@ -26,6 +27,7 @@ public class GhostCat : ChaserEnemy
         // detectionRange aquí es la distancia a la que sale de la sombra.
         if (shadowVisual != null) shadowVisual.SetActive(true);
         if (catVisual != null) catVisual.SetActive(false);
+        animator = GetComponent<Animator>();
     }
 
     protected override void Update()
@@ -44,6 +46,7 @@ public class GhostCat : ChaserEnemy
     private IEnumerator EmergeRoutine()
     {
         emerging = true;
+        animator.Play("emerge");
         if (shadowVisual != null) shadowVisual.SetActive(false);
         if (catVisual != null) catVisual.SetActive(true);
 

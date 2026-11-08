@@ -79,6 +79,9 @@ public class Door : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
+        // Pantalla en negro: matamos a los enemigos antes de generar la side room.
+        KillEnemies();
+
         if (!isBackDoor)
         {
             sideRoom.DeleteSideRoom();
@@ -101,5 +104,14 @@ public class Door : MonoBehaviour
         if (JumpscareManager.Instance != null) JumpscareManager.Instance.TryJumpscare();
 
         isOpening = false;
+    }
+
+    void KillEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Destroy(enemy);
+        }
     }
 }

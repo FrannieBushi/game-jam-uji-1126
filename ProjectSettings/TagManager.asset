@@ -7,6 +7,7 @@ TagManager:
   - BlackOverlay
   - Door
   - SideRoom
+  - Enemy
   layers:
   - Default
   - TransparentFX
