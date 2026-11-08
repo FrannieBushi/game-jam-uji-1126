@@ -95,6 +95,7 @@ public class Door : MonoBehaviour
                 sideRoom.GenerateSideRoom(doorType, DoorOrientation.BackLeft);
 
             sideRoom.TeleportPlayer(doorOrientation);
+            doorType = DoorType.Locked;
         }
         else
         {
@@ -109,7 +110,6 @@ public class Door : MonoBehaviour
 
         // Esperamos a que termine el fade para no ser golpeado nada más aparecer.
         // Si prefieres devolver el control antes, quita esta espera.
-        yield return new WaitForSeconds(1f);
 
         player.SetTransitioning(false);
         isOpening = false;
