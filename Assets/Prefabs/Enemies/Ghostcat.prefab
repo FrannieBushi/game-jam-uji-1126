@@ -149,12 +149,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 10
-  moveSpeed: 3
+  moveSpeed: 2.5
   damageCooldown: 1
-  detectionRange: 3
+  detectionRange: 2.5
   shadowVisual: {fileID: 0}
   catVisual: {fileID: 0}
-  emergeTime: 2
+  emergeTime: 1.5
   aggroDamageMultiplier: 1
 --- !u!95 &8330896901398163207
 Animator:
