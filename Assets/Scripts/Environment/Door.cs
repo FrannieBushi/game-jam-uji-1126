@@ -45,13 +45,12 @@ public class Door : MonoBehaviour
     {
         if (isOpening || OnCooldown) return;
 
-        PlayerDoorInteractor pdi = GameObject.FindWithTag("Player").GetComponent<PlayerDoorInteractor>();
-
         if (doorType == DoorType.Locked)
         {
-            if (pdi.hasKey)
+            Player player = GameObject.FindWithTag("Player").GetComponent<Player>();
+
+            if (player.TryUseKey())
             {
-                pdi.hasKey = false;
                 StartCoroutine(OpenDoorRoutine());
             }
             else
