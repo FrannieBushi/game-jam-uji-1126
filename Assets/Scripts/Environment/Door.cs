@@ -45,13 +45,14 @@ public class Door : MonoBehaviour
     {
         if (isOpening || OnCooldown) return;
 
+        Player player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        if (player.IsDead) return;
+
         if (doorType == DoorType.Locked)
         {
-            Player player = GameObject.FindWithTag("Player").GetComponent<Player>();
-
             if (player.TryUseKey())
             {
-                StartCoroutine(OpenDoorRoutine());
+                StartCoroutine(OpenDoorRoutine(player));
             }
             else
             {
@@ -60,14 +61,17 @@ public class Door : MonoBehaviour
         }
         else
         {
-            StartCoroutine(OpenDoorRoutine());
+            StartCoroutine(OpenDoorRoutine(player));
         }
     }
 
-    IEnumerator OpenDoorRoutine()
+    IEnumerator OpenDoorRoutine(Player player)
     {
         isOpening = true;
         nextAllowedTime = Time.time + transitionDuration + cooldownAfterUse;
+
+        // Bloquear al jugador: sin movimiento y sin daño.
+        player.SetTransitioning(true);
 
         animator.Play("OpenDoor");
 
@@ -91,6 +95,7 @@ public class Door : MonoBehaviour
                 sideRoom.GenerateSideRoom(doorType, DoorOrientation.BackLeft);
 
             sideRoom.TeleportPlayer(doorOrientation);
+            doorType = DoorType.Locked;
         }
         else
         {
@@ -99,9 +104,14 @@ public class Door : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        if (blackOverlay != null) blackOverlay.FadeOut(1f);
+        // Si murió durante la transición, no destapar la pantalla.
+        if (!player.IsDead && blackOverlay != null) blackOverlay.FadeOut(1f);
         if (JumpscareManager.Instance != null) JumpscareManager.Instance.TryJumpscare();
 
+        // Esperamos a que termine el fade para no ser golpeado nada más aparecer.
+        // Si prefieres devolver el control antes, quita esta espera.
+
+        player.SetTransitioning(false);
         isOpening = false;
     }
 

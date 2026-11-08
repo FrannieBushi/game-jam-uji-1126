@@ -53,6 +53,9 @@ public class DistanciaRecorrida : MonoBehaviour
 
     private bool IsInHallway(Vector2 pos)
     {
+        // Por debajo del origen cuenta como fuera del pasillo.
+        if (pos.y < originY) return false;
+
         if (detection == HallwayDetection.Collider && hallwayArea != null)
             return hallwayArea.OverlapPoint(pos);
 

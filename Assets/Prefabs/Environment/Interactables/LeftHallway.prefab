@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2616419794182083729, guid: a6e35a338feac944d82f7b4be93a358f, type: 3}
       propertyPath: m_Name
-      value: Door Variant
+      value: LeftHallway
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -81,3 +81,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac32f23513420cf44b2ac95f5cef5256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minKnockInterval: 1
+  maxKnockInterval: 4
