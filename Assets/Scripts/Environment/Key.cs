@@ -4,9 +4,9 @@ public class Key : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player") && collision.TryGetComponent(out Player player))
         {
-            collision.gameObject.GetComponent<PlayerDoorInteractor>().hasKey = true;
+            player.GiveKey();
             Destroy(gameObject);
         }
     }

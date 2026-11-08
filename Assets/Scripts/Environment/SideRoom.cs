@@ -15,9 +15,9 @@ public class SideRoom : MonoBehaviour
         GameObject door = null;
         fg = GameObject.FindWithTag("GameController").GetComponent<FloorGenerator>();
         if(doorOrientation==DoorOrientation.Left || doorOrientation==DoorOrientation.BackLeft )
-            door = fg.SpawnDoor(doorType, doorOrientation, leftSpawnPoint);
+            door = fg.SpawnDoor(DoorType.Normal, doorOrientation, leftSpawnPoint);
         if(doorOrientation==DoorOrientation.Right || doorOrientation==DoorOrientation.BackRight )
-            door = fg.SpawnDoor(doorType, doorOrientation, rightSpawnPoint);
+            door = fg.SpawnDoor(DoorType.Normal, doorOrientation, rightSpawnPoint);
 
         if(isLocked)
             door.GetComponent<Door>().doorType = DoorType.Locked;

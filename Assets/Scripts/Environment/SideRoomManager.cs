@@ -12,6 +12,7 @@ public class SideRoomManager : MonoBehaviour
     void Awake()
     {
         player = GameObject.FindWithTag("Player").transform;
+        GenerateSideRoom(DoorType.Normal, DoorOrientation.Left);
     }
 
     public void StoreReturnPosition()
@@ -31,7 +32,11 @@ public class SideRoomManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("no se ha creado un array de gameobjects de tipo " + doorType);
+            int r = Random.Range(0, knockRooms.Length);
+            activeSideRoom = Instantiate(knockRooms[r]);
+            var sr = activeSideRoom.GetComponent<SideRoom>();
+            sr.doorType = doorType;
+            sr.doorOrientation = doorOrientation;
         }
     }
 

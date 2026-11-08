@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3979518491198160627}
   - component: {fileID: 1096529057017222943}
-  - component: {fileID: 5313679438336644144}
+  - component: {fileID: 2690316529700742842}
+  - component: {fileID: 8050737442382633469}
   m_Layer: 0
   m_Name: taburete morado_0
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 271752857
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1997722592938292901, guid: 3329cfa1440ced945a3b9339d5981ac6, type: 3}
@@ -88,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5313679438336644144
+--- !u!61 &2690316529700742842
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +123,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.018229961, y: -0.06687665}
+  m_Offset: {x: 0.0089639425, y: -0.123627186}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,5 +133,58 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5124254, y: 0.36134005}
+  m_Size: {x: 0.5085728, y: 0.17969799}
   m_EdgeRadius: 0
+--- !u!114 &8050737442382633469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2401056383429726120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 0
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.265625, y: -0.21875, z: 0}
+  - {x: -0.265625, y: 0.21875, z: 0}
+  - {x: 0.265625, y: 0.21875, z: 0}
+  - {x: 0.265625, y: -0.21875, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 1096529057017222943}
+  m_ShadowShape2DProvider:
+    rid: 7837391632989946091
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.24562073, y: 0.19874573, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.02
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0.02
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0.02
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 1096529057017222943}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7837391632989946091
+      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 

@@ -16,6 +16,9 @@ GameObject:
   - component: {fileID: 4884082658918800831}
   - component: {fileID: 7619230364605458684}
   - component: {fileID: 7364700034911803146}
+  - component: {fileID: 4201689163991204971}
+  - component: {fileID: 3588703719506961798}
+  - component: {fileID: 3932233481722400881}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Player
@@ -35,7 +38,8 @@ Transform:
   m_LocalPosition: {x: -2.45, y: 0.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8580229642650117491}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7784880001461257027
@@ -61,7 +65,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,7 +83,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1741151165
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2594316872119718717, guid: 9084a15b15f60cd40a1510156dd4d07d, type: 3}
@@ -180,6 +184,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   maxHealth: 100
+  passiveDrainEnabled: 1
+  drainInterval: 2
+  drainAmount: 1
 --- !u!114 &4884082658918800831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,3 +259,150 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4201689163991204971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834019046969091825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf10ca63ce13de14ca4190025e01905d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  luz: {fileID: 8580229642650117491}
+  velocidadGiro: 10
+--- !u!114 &3588703719506961798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834019046969091825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2051774133ef0a04d879c6f9840cea8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  footstepClips:
+  - {fileID: 8300000, guid: 6769b10f8ee6ef345b41ae7f6844792b, type: 3}
+  stepInterval: 0.61
+  footstepVolume: 0.6
+  stepPitchRange: {x: 0.9, y: 1.1}
+  heartbeatClip: {fileID: 8300000, guid: 12ab36b77b6ae304488b4bbe483b853f, type: 3}
+  heartbeatStartThreshold: 0.743
+  slowestInterval: 1.2
+  fastestInterval: 0.11
+  minHeartbeatVolume: 0.2
+  maxHeartbeatVolume: 1
+  heartbeatPitchRange: {x: 0.95, y: 1.2}
+  damageClips:
+  - {fileID: 8300000, guid: 6109d2cfac51b3a45b409152b2a45dfa, type: 3}
+  - {fileID: 8300000, guid: b776123594437394ab68b9ad9194a4ba, type: 3}
+  - {fileID: 8300000, guid: 567d092b4a4b092459a2cb271ee4632b, type: 3}
+  - {fileID: 8300000, guid: 7fc2ddfb7378939469f9c80fad9fb8ab, type: 3}
+  damageVolume: 0.9
+--- !u!114 &3932233481722400881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834019046969091825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f823b7940ce95545bdfaa1ee7bc625d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  flashColor: {r: 0.9622642, g: 0.79516923, b: 0.45843717, a: 1}
+  flashCount: 3
+  flashDuration: 0.08
+  intervalDuration: 0.08
+--- !u!1 &8447751012695758493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8580229642650117491}
+  - component: {fileID: 8305599988206326372}
+  m_Layer: 0
+  m_Name: Spot Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8580229642650117491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8447751012695758493}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2285263415864762047}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8305599988206326372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8447751012695758493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 3
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.44
+  m_Color: {r: 0.91586685, g: 0.9254902, b: 0.84313726, a: 1}
+  m_Intensity: 2.93
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 1
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 58.153854
+  m_PointLightOuterAngle: 141.23073
+  m_PointLightInnerRadius: 0.17
+  m_PointLightOuterRadius: 3.95
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}

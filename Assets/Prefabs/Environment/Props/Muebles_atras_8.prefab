@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4073206184885969323}
   - component: {fileID: 1905874351606721539}
   - component: {fileID: 4500992838814698436}
+  - component: {fileID: -2071541808923160730}
   m_Layer: 0
   m_Name: Muebles_atras_8
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 271752857
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4759435585739462484, guid: 6cbe449248b17ba48ac0d13e3cc346a0, type: 3}
@@ -134,3 +135,56 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.6035671, y: 0.60356617}
   m_EdgeRadius: 0
+--- !u!114 &-2071541808923160730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5468012828083071332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 0
+  m_ComponentVersion: 5
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.359375, y: -0.359375, z: 0}
+  - {x: -0.359375, y: 0.359375, z: 0}
+  - {x: 0.359375, y: 0.359375, z: 0}
+  - {x: 0.359375, y: -0.359375, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 1905874351606721539}
+  m_ShadowShape2DProvider:
+    rid: 7837391632989946080
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.32937622, y: 0.32937622, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.03
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0.03
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0
+  m_PreviousEdgeProcessing: -1
+  m_PreviousShadowCastingSource: -1
+  m_PreviousShadowShape2DSource: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7837391632989946080
+      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 

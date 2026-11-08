@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor.ShaderGraph;
 
 public enum DoorType
 {
@@ -17,24 +16,41 @@ public class Door : MonoBehaviour
     ScreenFader blackOverlay;
     Animator animator;
     SideRoomManager sideRoom;
+
     public DoorType doorType = DoorType.Normal;
     public DoorOrientation doorOrientation = DoorOrientation.Left;
+
+    [SerializeField] private float cooldownAfterUse = 1f;
+
+    const float transitionDuration = 1.5f;
+
+    bool isOpening = false;
+    public bool IsOpening => isOpening;
+
+    static float nextAllowedTime = 0f;
+    public static bool OnCooldown => Time.time < nextAllowedTime;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetStatics() => nextAllowedTime = 0f;
 
     void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
         blackOverlay = GameObject.FindWithTag("BlackOverlay").GetComponent<ScreenFader>();
         sideRoom = GameObject.FindWithTag("GameController").GetComponent<SideRoomManager>();
-        if(sideRoom==null) Debug.Log("FALTA UN GAMEOBJECT VACIO CON TAG SIDEROOM!!!!!");
+        if (sideRoom == null) Debug.Log("FALTA UN GAMEOBJECT VACIO CON TAG SIDEROOM!!!!!");
     }
+
     public virtual void OpenDoor()
     {
-        PlayerDoorInteractor pdi = GameObject.FindWithTag("Player").GetComponent<PlayerDoorInteractor>();
-        if(doorType==DoorType.Locked)
+        if (isOpening || OnCooldown) return;
+
+        if (doorType == DoorType.Locked)
         {
-            if(pdi.hasKey)
+            Player player = GameObject.FindWithTag("Player").GetComponent<Player>();
+
+            if (player.TryUseKey())
             {
-                pdi.hasKey=false;
                 StartCoroutine(OpenDoorRoutine());
             }
             else
@@ -43,39 +59,58 @@ public class Door : MonoBehaviour
             }
         }
         else
+        {
             StartCoroutine(OpenDoorRoutine());
+        }
     }
-        
 
     IEnumerator OpenDoorRoutine()
     {
+        isOpening = true;
+        nextAllowedTime = Time.time + transitionDuration + cooldownAfterUse;
+
         animator.Play("OpenDoor");
 
         if (blackOverlay != null) blackOverlay.FadeIn(1f);
+
         bool isBackDoor = doorOrientation == DoorOrientation.BackLeft || doorOrientation == DoorOrientation.BackRight;
         if (!isBackDoor) sideRoom.StoreReturnPosition();
 
         yield return new WaitForSeconds(1f);
 
-        //llamar jumpscare aquí
-        
+        // Pantalla en negro: matamos a los enemigos antes de generar la side room.
+        KillEnemies();
+
         if (!isBackDoor)
         {
             sideRoom.DeleteSideRoom();
+
             if (doorOrientation == DoorOrientation.Left)
                 sideRoom.GenerateSideRoom(doorType, DoorOrientation.BackRight);
             else if (doorOrientation == DoorOrientation.Right)
                 sideRoom.GenerateSideRoom(doorType, DoorOrientation.BackLeft);
 
             sideRoom.TeleportPlayer(doorOrientation);
-                    }
+        }
         else
         {
             sideRoom.TeleportPlayerBack();
         }
 
         yield return new WaitForSeconds(0.5f);
+
         if (blackOverlay != null) blackOverlay.FadeOut(1f);
         if (JumpscareManager.Instance != null) JumpscareManager.Instance.TryJumpscare();
+
+        isOpening = false;
+    }
+
+    void KillEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Destroy(enemy);
+        }
     }
 }

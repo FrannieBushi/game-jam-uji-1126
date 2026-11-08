@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 3267196720619589688}
   - component: {fileID: 971652976077538299}
   - component: {fileID: 4763731792579575672}
+  - component: {fileID: 6683181786400990051}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -1092,6 +1093,59 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &6683181786400990051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940167507419209889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 0
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000999e321043243898
+  m_ShapePath:
+  - {x: -10, y: -5, z: 0}
+  - {x: -10, y: 7, z: 0}
+  - {x: 7, y: 7, z: 0}
+  - {x: 7, y: -5, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 4763731792579575672}
+  m_ShadowShape2DProvider:
+    rid: 7837391632989946071
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0, y: 0.5, z: 0}
+      m_Extent: {x: 7, y: 3.5, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 4763731792579575672}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7837391632989946071
+      type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 
 --- !u!1 &4493055740816298770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1157,7 @@ GameObject:
   - component: {fileID: 7524075852374751713}
   - component: {fileID: 8144629442827943522}
   - component: {fileID: 4701503716626143823}
+  - component: {fileID: 3818344214677216948}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1763,6 +1818,58 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!114 &3818344214677216948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493055740816298770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 0
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000999e321043243898
+  m_ShapePath:
+  - {x: -10, y: -5, z: 0}
+  - {x: -10, y: 7, z: 0}
+  - {x: 7, y: 7, z: 0}
+  - {x: 7, y: -5, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 0}
+  m_ShadowShape2DProvider:
+    rid: -2
+  m_ShadowCastingSource: 1
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: -1.5, y: 1, z: 0}
+      m_Extent: {x: 8.5, y: 6, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 1
+  m_PreviousShadowShape2DSource: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &7803322951707954557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +2013,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5926141729836078673}
     m_Modifications:
+    - target: {fileID: -7200622678942881844, guid: 623956c0c36e20c4498b1cf1cfcddb76, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4423437332604133318, guid: 623956c0c36e20c4498b1cf1cfcddb76, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.25
@@ -2013,7 +2124,8 @@ PrefabInstance:
       value: Lampara_morado
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7172683054825488285, guid: d6ae93b11942cd7468a7902cb32c88cf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6ae93b11942cd7468a7902cb32c88cf, type: 3}
