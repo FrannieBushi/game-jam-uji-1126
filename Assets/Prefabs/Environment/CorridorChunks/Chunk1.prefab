@@ -2336,6 +2336,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4805537251042153453, guid: 2fdb24e3030ac424b87ed4a4755df5bb, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805537251042153453, guid: 2fdb24e3030ac424b87ed4a4755df5bb, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805537251042153453, guid: 2fdb24e3030ac424b87ed4a4755df5bb, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805537251042153453, guid: 2fdb24e3030ac424b87ed4a4755df5bb, type: 3}
+      propertyPath: m_ShadowMesh.m_InitialTrim
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805537251042153453, guid: 2fdb24e3030ac424b87ed4a4755df5bb, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805537251042153453, guid: 2fdb24e3030ac424b87ed4a4755df5bb, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 7441901249010069767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2344,6 +2368,11 @@ PrefabInstance:
 --- !u!4 &1145691841543859995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 441802004466120457, guid: 2fdb24e3030ac424b87ed4a4755df5bb, type: 3}
+  m_PrefabInstance: {fileID: 704752035119683602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7441901249010069767 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7962709371279714581, guid: 2fdb24e3030ac424b87ed4a4755df5bb, type: 3}
   m_PrefabInstance: {fileID: 704752035119683602}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1730739288055001983
@@ -2602,6 +2631,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3555367318555370326}
     m_Modifications:
+    - target: {fileID: -7433203120754484389, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7433203120754484389, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -7433203120754484389, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7433203120754484389, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
+      propertyPath: m_ShadowMesh.m_InitialTrim
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7433203120754484389, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7433203120754484389, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 8599417285705398728}
     - target: {fileID: 3115840729400775320, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.48
@@ -2654,6 +2707,11 @@ PrefabInstance:
 --- !u!4 &1743265541080823126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3115840729400775320, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
+  m_PrefabInstance: {fileID: 3678563929575761870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &8599417285705398728 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4925713217394531846, guid: fd95feb0368817246a2113d12e3fb6bd, type: 3}
   m_PrefabInstance: {fileID: 3678563929575761870}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5105973594097489263
@@ -2828,6 +2886,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5689825868514236796, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689825868514236796, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689825868514236796, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689825868514236796, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
+      propertyPath: m_ShadowMesh.m_InitialTrim
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689825868514236796, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689825868514236796, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 7125270508466027875}
     - target: {fileID: 7647686268551757602, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
       propertyPath: m_Name
       value: Rotus
@@ -2840,6 +2922,11 @@ PrefabInstance:
 --- !u!4 &6582806707790861793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1262558710949218601, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
+  m_PrefabInstance: {fileID: 5395120658476358856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7125270508466027875 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2899573108584604075, guid: 6ac86e1f561fd064cbc72b271b74b43e, type: 3}
   m_PrefabInstance: {fileID: 5395120658476358856}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5765902855029853386
@@ -2920,6 +3007,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlfombraAmarilla_0
       objectReference: {fileID: 0}
+    - target: {fileID: 3640537799697672140, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
+      propertyPath: m_HasRenderer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640537799697672140, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
+      propertyPath: m_PreviousTrimEdge
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640537799697672140, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
+      propertyPath: m_PreviousEdgeProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640537799697672140, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
+      propertyPath: m_ShadowMesh.m_InitialTrim
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640537799697672140, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
+      propertyPath: m_PreviousShadowCastingSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640537799697672140, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 2486163014842170439}
     - target: {fileID: 4022596774658879874, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2965,6 +3076,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
+--- !u!212 &2486163014842170439 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8634179063920481419, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}
+  m_PrefabInstance: {fileID: 6148086435854018764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7098031995453004110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4022596774658879874, guid: 3653c04133fc0cd41bbe1f224dc95d03, type: 3}

@@ -232,6 +232,9 @@ MonoBehaviour:
   chunkPrefabs:
   - {fileID: 1525575097323348669, guid: 7b82bc581d234a540aa2f425a3a4d9ae, type: 3}
   - {fileID: 1525575097323348669, guid: efc661dceb642d7429718d487c28cb51, type: 3}
+  - {fileID: 1525575097323348669, guid: a10a28f9476629f41aaa5fcdf93f4374, type: 3}
+  - {fileID: 1525575097323348669, guid: 7367640fdbc98c04ea3329571aaca526, type: 3}
+  - {fileID: 1525575097323348669, guid: 0a6a1c49fefb65346ba2bc35b5ca3ebb, type: 3}
   closedPrefab: {fileID: 1423014583259236784, guid: f1809f200dc82a1488b7ce05844d7dd9, type: 3}
   chunkHeight: 10
   chunksAhead: 3
@@ -511,7 +514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2285263415864762047, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.08
+      value: 1.0799999
       objectReference: {fileID: 0}
     - target: {fileID: 2285263415864762047, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
       propertyPath: m_LocalPosition.z
