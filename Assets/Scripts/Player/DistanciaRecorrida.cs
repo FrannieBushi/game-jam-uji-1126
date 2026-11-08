@@ -15,6 +15,9 @@ public class DistanciaRecorrida : MonoBehaviour
     [SerializeField] private float hallwayCenterX = 0f;
     [SerializeField] private float hallwayHalfWidth = 2f;
     [SerializeField] private Collider2D hallwayArea;
+    private Player playerComp;
+    private float maxDistance;
+
 
     public float Distance { get; private set; }
     public bool InHallway { get; private set; }
@@ -34,6 +37,9 @@ public class DistanciaRecorrida : MonoBehaviour
             GameObject p = GameObject.FindWithTag(playerTag);
             if (p == null) return;
             player = p.transform;
+
+            playerComp = p.GetComponent<Player>();
+            if (playerComp != null) playerComp.OnDied += SaveRun;
         }
 
         bool inside = IsInHallway(player.position);
@@ -41,6 +47,7 @@ public class DistanciaRecorrida : MonoBehaviour
         if (inside)
         {
             Distance = Mathf.Abs(player.position.y - originY) * unitsToMeters;
+            if (Distance > maxDistance) maxDistance = Distance;
             if (label != null) label.text = string.Format(textFormat, Distance);
         }
 
@@ -49,6 +56,16 @@ public class DistanciaRecorrida : MonoBehaviour
             InHallway = inside;
             SetVisible(inside);
         }
+    }
+
+    private void SaveRun()
+    {
+        RunStats.SaveRun(maxDistance);
+    }
+
+    private void OnDestroy()
+    {
+        if (playerComp != null) playerComp.OnDied -= SaveRun;
     }
 
     private bool IsInHallway(Vector2 pos)
