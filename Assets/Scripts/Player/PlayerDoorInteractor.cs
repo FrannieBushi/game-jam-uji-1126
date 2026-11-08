@@ -15,6 +15,8 @@ public class PlayerDoorInteractor : MonoBehaviour
 
     private void TryInteract()
     {
+        if (Door.OnCooldown) return;
+
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactRadius, doorLayer);
 
         Door closest = null;
@@ -23,9 +25,8 @@ public class PlayerDoorInteractor : MonoBehaviour
         foreach (Collider2D hit in hits)
         {
             Door door = hit.GetComponent<Door>();
-            if (door == null) continue;
+            if (door == null || door.IsOpening) continue;
 
-            //para que abra siempre la mas cercana
             float dist = ((Vector2)door.transform.position - (Vector2)transform.position).sqrMagnitude;
             if (dist < closestDist)
             {

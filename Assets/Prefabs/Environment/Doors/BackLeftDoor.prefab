@@ -76,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 271752857
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 9003844177673077563, guid: 56d0cc0530d97824383dc6a03a80d767, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   doorOrientation: 2
+  cooldownAfterUse: 1
 --- !u!95 &6360092792069131350
 Animator:
   serializedVersion: 7
