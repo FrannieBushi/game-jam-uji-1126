@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4201689163991204971}
   - component: {fileID: 3588703719506961798}
   - component: {fileID: 3932233481722400881}
+  - component: {fileID: 9212795861080393089}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Player
@@ -202,11 +203,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactKey: 101
-  interactRadius: 1.5
+  interactRadius: 0.5
   doorLayer:
     serializedVersion: 2
     m_Bits: 64
-  hasKey: 0
+  keyIndicatorPrefab: {fileID: 5333392092171879898, guid: fe0d23979866e574ea7a21b4c9844e84, type: 3}
+  indicatorOffset: {x: 0, y: 0.8, z: 0}
+  indicatorFadeDuration: 0.2
 --- !u!114 &7619230364605458684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2051774133ef0a04d879c6f9840cea8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 122380143739989369}
   footstepClips:
   - {fileID: 8300000, guid: 6769b10f8ee6ef345b41ae7f6844792b, type: 3}
   stepInterval: 0.61
@@ -324,6 +327,28 @@ MonoBehaviour:
   flashCount: 3
   flashDuration: 0.08
   intervalDuration: 0.08
+--- !u!114 &9212795861080393089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834019046969091825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11dfb13c36841dc4296f16c7b18c132b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: {fileID: 0}
+  visualRoot: {fileID: 0}
+  textFormat: 'Distancia: {0:0} m'
+  playerTag: Player
+  originY: 13.67
+  unitsToMeters: 1
+  detection: 0
+  hallwayCenterX: 0
+  hallwayHalfWidth: 10
+  hallwayArea: {fileID: 0}
 --- !u!1 &8447751012695758493
 GameObject:
   m_ObjectHideFlags: 0
