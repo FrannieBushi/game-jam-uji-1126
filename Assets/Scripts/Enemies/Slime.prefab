@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1877059185273545502}
   - component: {fileID: 8330896901398163207}
   m_Layer: 0
-  m_Name: Ghostcat
-  m_TagString: Untagged
+  m_Name: Slime
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8747738984138955252}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6003921, y: 17, z: 10}
+  m_LocalPosition: {x: 1.6003921, y: 17, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1611811957324202287, guid: 0bc666700a9ef044ab391b39d14c835e, type: 3}
+  m_Sprite: {fileID: 546988466755350454, guid: 25f85362b4b6c3d40886073a0ff89258, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,17 +124,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.015625, y: 0.15625}
+  m_Offset: {x: 0.020612717, y: 0.29703522}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.48, y: -2}
-    oldSize: {x: 0.78125, y: 0.0625}
+    pivot: {x: 0.4375, y: 0}
+    oldSize: {x: 0.5, y: 0.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.78125, y: 0.0625}
+  m_Size: {x: 0.81904984, y: 0.58950806}
   m_EdgeRadius: 0
 --- !u!114 &1877059185273545502
 MonoBehaviour:
@@ -148,13 +148,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f87bac2930e7c974fbb146d38bcd7ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 10
-  moveSpeed: 3
+  baseDamage: 5
+  moveSpeed: 1.5
   damageCooldown: 1
   detectionRange: 3
   shadowVisual: {fileID: 0}
   catVisual: {fileID: 0}
-  emergeTime: 2
+  emergeTime: 1
   aggroDamageMultiplier: 1
 --- !u!95 &8330896901398163207
 Animator:
@@ -166,7 +166,7 @@ Animator:
   m_GameObject: {fileID: 8747738984138955252}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f11a6926ba561664fb9c552c3b381638, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5a54c99b962061e45a085c7e1d547e5e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
