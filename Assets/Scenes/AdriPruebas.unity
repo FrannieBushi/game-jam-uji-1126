@@ -366,7 +366,8 @@ MonoBehaviour:
   - {fileID: 7803322951707954557, guid: 777bf519d0f9db74cb4abf46cfefdf76, type: 3}
   - {fileID: 7803322951707954557, guid: 38d29403e18958f4ca010dc4d3c4dbd0, type: 3}
   - {fileID: 7803322951707954557, guid: 92c348d6010332d44b1c304516ac4377, type: 3}
-  knockRooms: []
+  knockRooms:
+  - {fileID: 7803322951707954557, guid: e2162fca1550eb7448c42dc9c0bf8ee0, type: 3}
   activeSideRoom: {fileID: 0}
 --- !u!1 &362023035
 GameObject:
