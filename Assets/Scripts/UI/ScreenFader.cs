@@ -12,6 +12,8 @@ public class ScreenFader : MonoBehaviour
         group = GetComponent<CanvasGroup>();
         group.blocksRaycasts = false;
         group.interactable = false;
+        FadeIn(0);
+        FadeOut(2);
     }
 
     public void FadeIn(float duration)
