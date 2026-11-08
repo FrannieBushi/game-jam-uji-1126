@@ -157,7 +157,7 @@ MonoBehaviour:
   expandDuration: 0.6
   expandAlongY: 0
   seenExpansionDamageFraction: 0.2
-  crossingDamageMultiplier: 3
+  crossingDamageMultiplier: 1.5
 --- !u!95 &6304607789521195171
 Animator:
   serializedVersion: 7
