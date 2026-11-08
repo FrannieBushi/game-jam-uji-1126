@@ -308,7 +308,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b776123594437394ab68b9ad9194a4ba, type: 3}
   - {fileID: 8300000, guid: 567d092b4a4b092459a2cb271ee4632b, type: 3}
   - {fileID: 8300000, guid: 7fc2ddfb7378939469f9c80fad9fb8ab, type: 3}
-  damageVolume: 0.9
+  damageVolume: 1
 --- !u!114 &3932233481722400881
 MonoBehaviour:
   m_ObjectHideFlags: 0
