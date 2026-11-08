@@ -235,6 +235,9 @@ MonoBehaviour:
   - {fileID: 1525575097323348669, guid: a10a28f9476629f41aaa5fcdf93f4374, type: 3}
   - {fileID: 1525575097323348669, guid: 7367640fdbc98c04ea3329571aaca526, type: 3}
   - {fileID: 1525575097323348669, guid: 0a6a1c49fefb65346ba2bc35b5ca3ebb, type: 3}
+  - {fileID: 1525575097323348669, guid: 5152e14de9a77a0468ed840567372b61, type: 3}
+  - {fileID: 1525575097323348669, guid: 0c33451039889d74b93c0667c1a1458e, type: 3}
+  - {fileID: 1525575097323348669, guid: 762ff9ddf5f1657409f46c37e6cabed2, type: 3}
   closedPrefab: {fileID: 1423014583259236784, guid: f1809f200dc82a1488b7ce05844d7dd9, type: 3}
   chunkHeight: 10
   chunksAhead: 3
@@ -416,6 +419,11 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!1 &595299560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5834019046969091825, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
+  m_PrefabInstance: {fileID: 1103534969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &893342707
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +563,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5834019046969091825, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1540435424}
   m_SourcePrefab: {fileID: 100100000, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
 --- !u!1 &1528682448
 GameObject:
@@ -715,6 +726,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2285263415864762047, guid: 7557f38e8501511439090b8324bc6c26, type: 3}
   m_PrefabInstance: {fileID: 1103534969}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1540435424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595299560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4246a5bf53a8224c99f2052457af1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  amount: 10
 --- !u!1001 &1733270970
 PrefabInstance:
   m_ObjectHideFlags: 0
