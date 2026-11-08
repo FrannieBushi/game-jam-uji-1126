@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 7619230364605458684}
   - component: {fileID: 7364700034911803146}
   - component: {fileID: 4201689163991204971}
+  - component: {fileID: 3588703719506961798}
+  - component: {fileID: 3932233481722400881}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Player
@@ -268,6 +270,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   luz: {fileID: 8580229642650117491}
   velocidadGiro: 10
+--- !u!114 &3588703719506961798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834019046969091825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2051774133ef0a04d879c6f9840cea8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  footstepClips:
+  - {fileID: 8300000, guid: 6769b10f8ee6ef345b41ae7f6844792b, type: 3}
+  stepInterval: 0.61
+  footstepVolume: 0.6
+  stepPitchRange: {x: 0.9, y: 1.1}
+  heartbeatClip: {fileID: 8300000, guid: 12ab36b77b6ae304488b4bbe483b853f, type: 3}
+  heartbeatStartThreshold: 0.743
+  slowestInterval: 1.2
+  fastestInterval: 0.11
+  minHeartbeatVolume: 0.2
+  maxHeartbeatVolume: 1
+  heartbeatPitchRange: {x: 0.95, y: 1.2}
+  damageClips:
+  - {fileID: 8300000, guid: 6109d2cfac51b3a45b409152b2a45dfa, type: 3}
+  - {fileID: 8300000, guid: b776123594437394ab68b9ad9194a4ba, type: 3}
+  - {fileID: 8300000, guid: 567d092b4a4b092459a2cb271ee4632b, type: 3}
+  - {fileID: 8300000, guid: 7fc2ddfb7378939469f9c80fad9fb8ab, type: 3}
+  damageVolume: 0.9
+--- !u!114 &3932233481722400881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834019046969091825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f823b7940ce95545bdfaa1ee7bc625d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  flashColor: {r: 0.9622642, g: 0.79516923, b: 0.45843717, a: 1}
+  flashCount: 3
+  flashDuration: 0.08
+  intervalDuration: 0.08
 --- !u!1 &8447751012695758493
 GameObject:
   m_ObjectHideFlags: 0
