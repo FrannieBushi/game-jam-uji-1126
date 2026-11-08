@@ -231,7 +231,7 @@ MonoBehaviour:
   player: {fileID: 1540435415}
   chunkPrefabs:
   - {fileID: 1525575097323348669, guid: 7b82bc581d234a540aa2f425a3a4d9ae, type: 3}
-  - {fileID: 1525575097323348669, guid: 97f5967ec4a2bd94a8fda2127a2debc4, type: 3}
+  - {fileID: 1525575097323348669, guid: efc661dceb642d7429718d487c28cb51, type: 3}
   closedPrefab: {fileID: 1423014583259236784, guid: f1809f200dc82a1488b7ce05844d7dd9, type: 3}
   chunkHeight: 10
   chunksAhead: 3
@@ -282,7 +282,8 @@ MonoBehaviour:
   - {fileID: 7803322951707954557, guid: 777bf519d0f9db74cb4abf46cfefdf76, type: 3}
   - {fileID: 7803322951707954557, guid: 38d29403e18958f4ca010dc4d3c4dbd0, type: 3}
   - {fileID: 7803322951707954557, guid: 92c348d6010332d44b1c304516ac4377, type: 3}
-  knockRooms: []
+  knockRooms:
+  - {fileID: 7803322951707954557, guid: 140a1aa56c30f6c46bb82b69444171b4, type: 3}
   activeSideRoom: {fileID: 0}
 --- !u!1 &362023035
 GameObject:
