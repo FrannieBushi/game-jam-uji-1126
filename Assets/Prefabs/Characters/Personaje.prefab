@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7364700034911803146}
   - component: {fileID: 4201689163991204971}
   - component: {fileID: 3588703719506961798}
+  - component: {fileID: 3932233481722400881}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Player
@@ -300,6 +301,24 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 567d092b4a4b092459a2cb271ee4632b, type: 3}
   - {fileID: 8300000, guid: 7fc2ddfb7378939469f9c80fad9fb8ab, type: 3}
   damageVolume: 0.9
+--- !u!114 &3932233481722400881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834019046969091825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f823b7940ce95545bdfaa1ee7bc625d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  flashColor: {r: 0.9622642, g: 0.79516923, b: 0.45843717, a: 1}
+  flashCount: 3
+  flashDuration: 0.08
+  intervalDuration: 0.08
 --- !u!1 &8447751012695758493
 GameObject:
   m_ObjectHideFlags: 0
