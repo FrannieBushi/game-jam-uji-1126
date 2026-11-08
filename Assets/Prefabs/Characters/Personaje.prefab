@@ -187,6 +187,8 @@ MonoBehaviour:
   passiveDrainEnabled: 1
   drainInterval: 2
   drainAmount: 1
+  deathFader: {fileID: 0}
+  deathFadeDuration: 2
 --- !u!114 &4884082658918800831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +305,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b776123594437394ab68b9ad9194a4ba, type: 3}
   - {fileID: 8300000, guid: 567d092b4a4b092459a2cb271ee4632b, type: 3}
   - {fileID: 8300000, guid: 7fc2ddfb7378939469f9c80fad9fb8ab, type: 3}
-  damageVolume: 0.9
+  damageVolume: 1
 --- !u!114 &3932233481722400881
 MonoBehaviour:
   m_ObjectHideFlags: 0

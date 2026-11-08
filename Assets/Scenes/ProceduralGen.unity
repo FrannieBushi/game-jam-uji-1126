@@ -392,6 +392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7224179483251468591, guid: e96c697363b66be4d9fb71b073991ec0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7444490797463115470, guid: e96c697363b66be4d9fb71b073991ec0, type: 3}
       propertyPath: player
       value: 
@@ -549,6 +553,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2196738211570048555, guid: 8426b1b2b8969b54abdf673c623abf9b, type: 3}
+      propertyPath: jumpscareImage
+      value: 
+      objectReference: {fileID: 1548067465}
+    - target: {fileID: 2222716041962093330, guid: 8426b1b2b8969b54abdf673c623abf9b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1540435419}
     - target: {fileID: 7100273403951328108, guid: 8426b1b2b8969b54abdf673c623abf9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3541379
@@ -994,6 +1006,17 @@ MonoBehaviour:
   hallwayCenterX: 0
   hallwayHalfWidth: 10
   hallwayArea: {fileID: 0}
+--- !u!114 &1548067465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6348153709693452540, guid: e96c697363b66be4d9fb71b073991ec0, type: 3}
+  m_PrefabInstance: {fileID: 69000027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1629013073 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2199833053189083220, guid: e96c697363b66be4d9fb71b073991ec0, type: 3}
