@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 4201689163991204971}
   - component: {fileID: 3588703719506961798}
   - component: {fileID: 3932233481722400881}
-  - component: {fileID: 2726183067385097628}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Player
@@ -186,7 +185,7 @@ MonoBehaviour:
   speed: 4
   maxHealth: 100
   passiveDrainEnabled: 1
-  drainInterval: 1
+  drainInterval: 2
   drainAmount: 1
 --- !u!114 &4884082658918800831
 MonoBehaviour:
@@ -323,20 +322,6 @@ MonoBehaviour:
   flashCount: 3
   flashDuration: 0.08
   intervalDuration: 0.08
---- !u!114 &2726183067385097628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5834019046969091825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4246a5bf53a8224c99f2052457af1b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  amount: 10
 --- !u!1 &8447751012695758493
 GameObject:
   m_ObjectHideFlags: 0
